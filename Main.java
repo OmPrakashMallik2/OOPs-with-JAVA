@@ -7,13 +7,22 @@ class Students {
     int age;
     float marks = 90;
 
+    void Hello(){
+        System.out.println("my name is "+this.name);
+    }
+
+    void ChangeName(String naaam){
+        this.name = naaam;
+    }
+
 
     //constructor
-    Students(String name, int roll, int age, float marks){
-        this.name = name;
-        this.roll = roll;
-        this.age = age;
-        this.marks = marks;
+    // Students(String name, int roll, int age, float marks){
+    Students(){
+        this.name = "skm";
+        this.roll = 05;
+        this.age = 18;
+        this.marks = 78;
     }
 }
 
@@ -27,18 +36,23 @@ public class Main {
 
         // object jpm
         Students jpm;
-        jpm = new Students("Sachin", 5, 18, 78.5f);
-
-        // giving value to jpm
+        jpm = new Students();
+        jpm.Hello();
         
-                System.out.println(jpm.roll);
-                System.out.println(jpm.name);
-                System.out.println(jpm.marks);
-                System.out.println(jpm.age);
+        // giving value to jpm
         jpm.age = 21;
         jpm.roll = 42;
         jpm.name = "Jay Prakash Mallik";
         jpm.marks = 74.8f;
+        
+        System.out.println(jpm.roll);
+        System.out.println(jpm.name);
+        System.out.println(jpm.marks);
+        System.out.println(jpm.age);
+        jpm.Hello();
+
+        jpm.ChangeName("opm");
+        jpm.Hello();
 
         // CONSTUCTOR : it is a special funtion that is inside a class,
         // if we dont make a constructor then object use the default constructor named 
