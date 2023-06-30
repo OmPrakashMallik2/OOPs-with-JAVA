@@ -1,5 +1,22 @@
 import java.util.Arrays;
 
+// CREATED CLASS
+class Students {
+    String name;
+    int roll ; 
+    int age;
+    float marks = 90;
+
+
+    //constructor
+    Students(String name, int roll, int age, float marks){
+        this.name = name;
+        this.roll = roll;
+        this.age = age;
+        this.marks = marks;
+    }
+}
+
 public class Main {
     
     public static void main(String[] args) {
@@ -10,33 +27,22 @@ public class Main {
 
         // object jpm
         Students jpm;
-        jpm = new Students();
+        jpm = new Students("Sachin", 5, 18, 78.5f);
 
-        // giving value to it
+        // giving value to jpm
+        
+                System.out.println(jpm.roll);
+                System.out.println(jpm.name);
+                System.out.println(jpm.marks);
+                System.out.println(jpm.age);
         jpm.age = 21;
         jpm.roll = 42;
         jpm.name = "Jay Prakash Mallik";
         jpm.marks = 74.8f;
 
-        System.out.println(jpm.roll);
-        System.out.println(jpm.name);
-        System.out.println(jpm.marks);
-        System.out.println(jpm.age);
+        // CONSTUCTOR : it is a special funtion that is inside a class,
+        // if we dont make a constructor then object use the default constructor named 
+        // by class name for example - class name is OPM then default constructor will be OPM() 
         
     }
-}
-
-
-// CREATED CLASS
-class Students {
-    int age;
-
-    // store 5 roll numbers
-    int roll ; 
-
-    // store 5 names
-    String name;
-    
-    // marks
-    float marks = 90;
 }
