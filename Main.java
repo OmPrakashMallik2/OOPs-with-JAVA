@@ -96,4 +96,7 @@ public class Main {
         // by class name for example - class name is OPM then default constructor will be OPM() 
         
     }
+
+    public void fun() {
+    }
 }

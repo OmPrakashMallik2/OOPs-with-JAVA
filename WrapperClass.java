@@ -4,8 +4,6 @@ public class WrapperClass {
         int a = 40;
         int b = 20;
 
-        int b = 50;
-
         swap(a, b);
     }
 
