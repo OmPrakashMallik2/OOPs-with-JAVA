@@ -6,7 +6,7 @@ class Students {
     int roll ; 
     int age;
 
-    // cant modify the variable of final.
+    // can not modify the variable of  with the "final" keyword.
     // final float marks = 90;
     float marks = 90;
 
