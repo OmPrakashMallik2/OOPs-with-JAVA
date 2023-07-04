@@ -10,7 +10,7 @@ class Students {
     // final float marks = 90;
     float marks = 90;
 
-    void Hello(){
+    void Hello(){ 
         System.out.println("my name is "+this.name);
     }
 
