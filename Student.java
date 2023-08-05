@@ -3,6 +3,7 @@ public class Student {
     int age;
     String Address;
 
+
     //setter
     void setName(String name){
         this.name = name;
@@ -13,6 +14,7 @@ public class Student {
     void setAge(int age){
         this.age = age;
     }
+
 
     //getter
     String getName(){
@@ -28,7 +30,21 @@ public class Student {
     }
 
 
+    //show
+    void show(){
+        System.out.println("Name : "+name);
+        System.out.println("Age : "+age);
+        System.out.println("from : "+Address+".");
+    }
     public static void main(String[] args) {
         Student s1 = new Student();
+
+        s1.setName("OmPrakashMallik");
+        s1.setAdd("Darbhanga");
+        s1.setAge(22);
+
+        s1.show();
+
+        System.out.println(s1.getName());
     }
 }
