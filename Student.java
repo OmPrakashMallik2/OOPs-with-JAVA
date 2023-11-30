@@ -1,37 +1,48 @@
-public class Student {
+class Father {
+    String FatherName;
+    int FatherAge;
+
+    //setter
+    public void job(String job){
+        System.out.println("i am "+job);
+    }
+
+}
+
+public class Student extends Father {
     String name;
     int age;
     String Address;
 
 
     //setter
-    void setName(String name){
+    public void setName(String name){
         this.name = name;
     }
-    void setAdd(String Address){
+    public void setAdd(String Address){
         this.Address = Address;
     }
-    void setAge(int age){
+    public void setAge(int age){
         this.age = age;
     }
 
 
     //getter
-    String getName(){
+    public String getName(){
         return name;
     }
 
-    int getAge(){
+    public int getAge(){
         return age;
     }
 
-    String getAdd(){
+    public String getAdd(){
         return Address;
     }
 
 
     //show
-    void show(){
+    public void show(){
         System.out.println("Name : "+name);
         System.out.println("Age : "+age);
         System.out.println("from : "+Address+".");
@@ -46,5 +57,7 @@ public class Student {
         s1.show();
 
         System.out.println(s1.getName());
+
+        s1.job("Engineer");
     }
 }
