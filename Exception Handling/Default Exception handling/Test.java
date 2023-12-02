@@ -1,7 +1,7 @@
 
 public class Test {
     public static void main(String[] args) {
-        doStuff();
+        doStuff(); 
     }
 
     public static void doStuff() {
@@ -9,6 +9,7 @@ public class Test {
     }
 
     public static void doMoreStuff() {
-        System.out.println("Hello");
+        // System.out.println("Hello");
+        System.out.println(10/0);
     }
 }
