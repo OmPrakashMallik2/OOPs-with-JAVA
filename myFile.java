@@ -5,6 +5,6 @@ public class myFile {
 
         System.out.println("apple");
         Test obj = new Test();
-        obj.doStuff();
+        // obj.doStuff();
     }
 }
