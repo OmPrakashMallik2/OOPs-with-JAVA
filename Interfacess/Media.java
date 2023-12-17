@@ -1,4 +1,4 @@
-package Interfacess;
+// package Interfacess;
 
 public interface Media {
     void start();

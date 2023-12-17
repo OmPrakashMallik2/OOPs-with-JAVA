@@ -1,4 +1,4 @@
-class Bike {
+class BikeNew {
     int cc;
     String name;
     final int milage;
@@ -22,4 +22,3 @@ public class FinalTest {
         b.display();
     }
 }
-/

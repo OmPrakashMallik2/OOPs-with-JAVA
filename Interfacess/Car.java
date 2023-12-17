@@ -1,6 +1,6 @@
-package Interfacess;
+// package Interfacess;
 
-public class Car implements Engine, Brake {
+public class Car implements Engine, Brake, Media {
 
     @Override
     public void brake() {
@@ -9,12 +9,12 @@ public class Car implements Engine, Brake {
 
     @Override
     public void start() {
-        System.out.println("I do start like a normal car.");
+        System.out.println("I do start engine like a normal car.");
     }
 
     @Override
     public void stop() {
-        System.out.println("I do stop like a normal car.");
+        System.out.println("I do stop  enginelike a normal car.");
     }
 
     @Override

@@ -1,12 +1,22 @@
-package Interfacess;
+// import Interfacess.*;
 
 public class Main {
     public static void main(String[] args) {
-        Car car = new Car();
+        Engine car = new Car();
 
-        car.start();
-        car.stop();
-        car.acc();
-        car.brake();
+        // car.start();
+        // car.stop();
+        // car.acc();
+        // car.brake();
+        // System.out.println(car.PRICE);
+
+        // Media mcar = new Car();
+        // mcar.stop();
+
+        NiceCar nc = new NiceCar();
+        nc.start();
+        nc.startMusic();
+        nc.upgradeEngine();
+        nc.start();
     }
 }
