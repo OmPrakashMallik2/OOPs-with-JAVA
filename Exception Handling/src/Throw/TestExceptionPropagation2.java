@@ -1,8 +1,11 @@
 package Throw;
 
-public class TestExceptionPropagation1 {
-    void m(){
-        int x = 20/0;
+
+import java.io.IOException;
+
+public class TestExceptionPropagation2 {
+    void m() {
+//        throw new java.io.IOException("Device Error");
     }
     void n(){
         m();
@@ -17,8 +20,8 @@ public class TestExceptionPropagation1 {
     }
 
     public static void main(String[] args) {
-        TestExceptionPropagation1 tp1 = new TestExceptionPropagation1();
-        tp1.p();
+        TestExceptionPropagation1 tp2 = new TestExceptionPropagation1();
+        tp2.p();
         System.out.println("Normal flow of program");
     }
 }
