@@ -3,25 +3,24 @@ package Throws;
 import java.io.IOException;
 
 public class TestThrows1 {
-
-    void m() throws IOException {
-        throw new IOException("System Error");
+    void m1() throws IOException {
+        throw new IOException("Device error");
     }
 
-    void n() throws IOException {
-        m();
+    void m2() throws IOException {
+        m1();
     }
 
-    void p(){
+    void m3(){
         try{
-            n();
+            m2();
         } catch (Exception e){
-            System.out.println("Exception Handled");
+            System.out.println("Exception handled");
         }
     }
     public static void main(String[] args) {
         TestThrows1 tt = new TestThrows1();
-        tt.p();
+        tt.m3();
         System.out.println("Normal Flow");
     }
 }
